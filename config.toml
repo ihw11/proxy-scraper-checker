@@ -29,7 +29,7 @@ sort_by_speed = true
 # Save the geolocation of the proxy exit-node.
 # Uses offline geolocation database.
 # Only works for json output.
-enable_geolocation = true
+enable_geolocation = false
 
 # Enable output of all errors. Significantly slows down proxy checking.
 debug = false
@@ -40,7 +40,7 @@ debug = false
 # This option is ignored in Docker.
 path = "./out"
 
-json = true
+json = false
 txt = true
 
 # If you have sources with a protocol prefix, such as socks5://127.0.0.1:1050, you can add them to any of these sections.
