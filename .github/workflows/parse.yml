@@ -19,3 +19,8 @@ jobs:
           run: |
             chmod +x start.sh
             ./start.sh
+        - name: push to repo
+          uses: actions4git/add-commit-push@v1.0.0
+          with:
+            path: /home/runner/work/proxy-scraper-checker/proxy-scraper-checker/out
+   
