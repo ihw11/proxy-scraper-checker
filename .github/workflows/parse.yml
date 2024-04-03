@@ -15,6 +15,5 @@ jobs:
             python-version: 3.11
         - name: Execute the scrapper
           run: 
-            ls
             chmod +777 start.sh
             ./start.sh
