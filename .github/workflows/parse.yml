@@ -2,6 +2,7 @@ name: scrapper
 on:
   schedule:
     - cron: '30,00 * * * *'
+  workflow_dispatch: 
 
 jobs:
   scrap:
@@ -17,4 +18,5 @@ jobs:
             pip install -r requirements.txt
         - name: Execute the scrapper
           run:
-            python3 main.py
+            chmod +777 start.sh
+            ./start.sh
