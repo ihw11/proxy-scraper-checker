@@ -15,6 +15,7 @@ jobs:
           with:
             python-version: 3.11
         - name: run a start.sh
-          shell: bash
+          
           run: |
-            start.sh
+            chmod +x start.sh
+            ./start.sh
