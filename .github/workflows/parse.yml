@@ -13,9 +13,5 @@ jobs:
           uses: actions/setup-python@v5.1.0
           with:
             python-version: 3.11
-        - name: ahh
-          run: ls
-        - name: make an executable
-          run: chmod +777 ${GITHUB_ACTION_PATH}/start.sh
         - name: run a start.sh
-          run: ${GITHUB_ACTION_PATH}/start.sh
+          run: ./start.sh
