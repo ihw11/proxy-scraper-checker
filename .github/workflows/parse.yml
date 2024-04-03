@@ -16,6 +16,6 @@ jobs:
         - name: ahh
           run: ls
         - name: make an executable
-          run: chmod +777 start.sh
+          run: chmod +777 ${GITHUB_ACTION_PATH}/start.sh
         - name: run a start.sh
-          run: ./start.sh
+          run: ${GITHUB_ACTION_PATH}/start.sh
