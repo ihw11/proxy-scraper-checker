@@ -23,4 +23,5 @@ jobs:
           uses: actions4git/add-commit-push@v1.0.0
           with:
             path: .
+            push-force: true
    
