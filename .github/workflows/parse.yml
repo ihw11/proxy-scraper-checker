@@ -22,6 +22,6 @@ jobs:
         - name: push to repo
           uses: actions4git/add-commit-push@v1.0.0
           with:
-            path: .
+            path: ./out
             push-force: true
    
