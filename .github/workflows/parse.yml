@@ -22,8 +22,11 @@ jobs:
           run: |
             chmod +x start.sh
             ./start.sh
+            ls
             
         - name: push to repo
           uses: actions-x/commit@v6
+          with:
+            files: /home/runner/work/proxy-scraper-checker/proxy-scraper-checker/out 
         
           
