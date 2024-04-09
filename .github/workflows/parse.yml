@@ -24,7 +24,7 @@ jobs:
             ./start.sh
             
         - name: push to repo
-          uses: ad-m/github-push-action@v0.6.0\
+          uses: ad-m/github-push-action@v0.6.0
           with:
             github_token:  ${{ secrets.GITHUB_TOKEN }}
             directory: .
