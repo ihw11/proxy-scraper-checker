@@ -15,7 +15,7 @@ jobs:
           with:
             python-version: 3.11
             cache: "pip"
-        - run: pip install -U --disable-pip-version-check --editable .[non-termux]
+        - run: pip install --disable-pip-version-check --editable .[non-termux]
           
         - name: run a start.sh
           
@@ -24,5 +24,8 @@ jobs:
             ./start.sh
             
         - name: push to repo
-          uses: actions4git/add-commit-push@v1.0.0
+          uses: ad-m/github-push-action@v0.6.0\
+          with:
+            github_token:  ${{ secrets.GITHUB_TOKEN }}
+            directory: .
           
